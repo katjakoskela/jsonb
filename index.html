@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tyylit.css">
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Etusivu</a>
+    <a href="tapahtumat.html">Tapahtumat</a>
+    <a href="saa.html">Sää</a>
+    <a href="liikennekamera.html">Liikennekamera</a>
+    <a href="junat.html">Junat</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="vastaus"></div>
+  <script src="etusivu.js"></script>
+
+<p>
+    <h1>Erilaisia rajapinta harjoituksia</h1>
+</p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
